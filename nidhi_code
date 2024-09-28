@@ -13,6 +13,39 @@
 <body>
     <p>
         <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <form id="event-form">
+            <input type="text" id="summary" placeholder="Event Title" required>
+            <input type="text" id="location" placeholder="Event Location">
+            <input type="datetime-local" id="start-time" required>
+            <input type="datetime-local" id="end-time" required>
+            <button type="button" onclick="createEvent()">Create Event</button>
+          </form>
+          
+          <script>
+            function createEvent() {
+              const event = {
+                summary: document.getElementById('summary').value,
+                location: document.getElementById('location').value,
+                start: {
+                  dateTime: new Date(document.getElementById('start-time').value).toISOString(),
+                  timeZone: 'America/Los_Angeles'
+                },
+                end: {
+                  dateTime: new Date(document.getElementById('end-time').value).toISOString(),
+                  timeZone: 'America/Los_Angeles'
+                }
+              };
+          
+              gapi.client.calendar.events.insert({
+                calendarId: 'primary',
+                resource: event
+              }).then(response => {
+                alert('Event created: ' + response.result.htmlLink);
+              }).catch(err => {
+                console.error("Error creating event: ", err);
+              });
+            }
+          </script>          
     </p>
 </body>
             

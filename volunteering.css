@@ -1,0 +1,90 @@
+body {
+    background-image: url("whatkind-01.png");
+    background-size: 60%;
+    background-position: center top;
+    background-repeat:no-repeat;
+}
+
+.button0
+{
+    position: absolute;
+    background-image: url("whatkindheart-01.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat:no-repeat;
+    width: 1500px;
+    height: 500px;
+
+    left: 0%;
+    bottom: 2%;
+}
+
+.button1
+{
+    position: absolute;
+    background-image: url("healthcare-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 300px;
+    height: 150px;
+
+    left: 17%;
+    bottom: 53%;
+    border-radius: 25px;
+}
+
+.button2
+{
+    position: absolute;
+    background-image: url("admin-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 300px;
+    height: 150px;
+
+    left: 40.5%;
+    bottom: 53%;
+    border-radius: 25px;
+}
+
+.button3
+{
+    position: absolute;
+    background-image: url("community-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 300px;
+    height: 150px;
+
+    left: 64%;
+    bottom: 53%;
+    border-radius: 25px;
+}
+
+.button4
+{
+    position: absolute;
+    background-image: url("animal-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 300px;
+    height: 150px;
+
+    left: 27%;
+    bottom: 28%;
+    border-radius: 25px;
+}
+
+.button5
+{
+    position: absolute;
+    background-image: url("mentorship-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 300px;
+    height: 150px;
+
+    left: 51%;
+    bottom: 28%;
+    border-radius: 25px;
+}

@@ -1,24 +1,25 @@
+
 body {
     background-image: url("aggies.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat:no-repeat;
+    height: 100vh;
 }
 
-.card {
-    text-align: center;
-    position: relative;
-    top: 72%;
-    background-color: white;
-    width: 20%;
-    margin: auto;
-    padding: 10px;
-}
-
-.card-footer-item {
+.button1
+{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    background-image: url("get started-01.png");
+    background-size: contain;
+    background-position: center top;
+    width: 400px;
+    height: 75px;
+
+    left: 37%;
+    bottom: 18%;
+    border-radius: 25px;
 }
+
+
+
